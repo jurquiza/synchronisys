@@ -38,5 +38,6 @@ class Parameter(models.Model):
 	URL = models.URLField(default='www.reference_urls.com',max_length=300)
 	notes = models.TextField(default='comments related to the parameter')
 	
-	
+	def __unicode__(self):
+		return self.component
 
