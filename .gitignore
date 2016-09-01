@@ -1,0 +1,7 @@
+db.sqlite3
+anaconda2/*
+index.html
+static/*
+media/*
+synchronisys/s.py
+*.pyc
