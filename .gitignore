@@ -7,3 +7,4 @@ synchronisys/s.py
 *.pyc
 *.swp
 *.rdb
+plantconstraints/migrations/*
