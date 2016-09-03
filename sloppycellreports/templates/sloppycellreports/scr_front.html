@@ -2,9 +2,13 @@
 
 
 {% block content%}
-<a class="btn btn-link" href="/sloppycellreports/scr_current_fitting/" role="button ">Display Current fitting report</a>
+<ul>
+<li><a class="btn btn-link" href="/sloppycellreports/scr_current_fitting/" role="button ">Display Current fitting report</a></li>
+{% for link in dir_list %}
+<li><a class="btn btn-link" href="#" role="button ">{{ link }}</a></li>
 
-
+{% endfor %}
+</ul>
 {% endblock %}
 
 

@@ -3,19 +3,18 @@
 {% block content  %}
 <div class="container-fluid">
    <div class="row">
-     <div class="col-lg-6">
-	<div class="thumbnail">
-	<img src="/media/col_0_LL_constraint_amp_period.png" alt="..." id="#display">
-	</div>
-     </div>
-     <div class="col-lg-6">
-       <div class="thumbnail">
 	<h1>Constraints</h1>
-	<img src="/media/col_0_LL_constraint_amp_period.png" alt="..." id="#display">
-	<img src="/media/col_0_DD_constraint_amp_period.png" alt="..." id="#display">
-	<img src="/media/prr79_LL_constraint_amp_period.png" alt="..." id="#display">
+	
+    {% for constraint in constraints %}
+     <div class="col-lg-6">
+	     <div class="thumbnail">
+    <img src="/static/"{{ constraint }} alt="..." id="#display">
+	    </div>
+     </div>
+    {% endfor %}
+    
         <h1>Cost</h1>
-	 <img src="/media/Test.png" alt="..." id="#display">
+	 <img src="/static/"{{ cost }} alt="..." id="#display">
          
         </div>
        </div>
