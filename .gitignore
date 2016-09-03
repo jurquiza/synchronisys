@@ -9,4 +9,4 @@ synchronisys/s.py
 *.rdb
 plantconstraints/migrations/*
 
-sloppycellreports/static/sloppycellreports/img/*
+sloppycellreports/static/*

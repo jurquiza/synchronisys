@@ -1,5 +1,5 @@
 {% extends "base.html"%}
-{% load staticfiles%}
+
 {% block content  %}
 <div class="container-fluid">
    <div class="row">
@@ -10,9 +10,9 @@
 	<div class="col-lg-6">
         <h1>Constraints</h1>
     {% for constraint in constraints %}
-     <div class="col-lg-3">
+     <div class="col-lg-6">
 	     <div class="thumbnail">
-    <img src="/static/"{{ constraint }} alt="..." id="#display">
+    <img src="/static/sloppycellreports/{{ fitting_folder }}/images/{{ constraint }}" alt="..." id="#display"/>
 	    </div>
      </div>
     {% endfor %}
@@ -21,8 +21,9 @@
     
     <div class="col-lg-3">
         <h1>Cost</h1>
-	 <img src="/static/"{{ cost }} alt="..." id="#display">
-         
+        <div class="thumbnail">
+	 <img src="/static/sloppycellreports/{{ fitting_folder }}/images/{{ cost }}" alt="..." id="#display"/>
+         </div>
     </div>
    </div>
 </div>
