@@ -8,3 +8,5 @@ synchronisys/s.py
 *.swp
 *.rdb
 plantconstraints/migrations/*
+
+sloppycellreports/static/sloppycellreports/img/*

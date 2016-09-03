@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [ 
     url(r'^admin/', admin.site.urls),
     url(r'', include('frontpage.urls')),
-    url(r'plantconstraints', include('plantconstraints.urls')),
+    url(r'^plantconstraints/', include('plantconstraints.urls')),
+    url(r'^sloppycellreports/', include('sloppycellreports.urls')),
 ]
