@@ -10,3 +10,9 @@ synchronisys/s.py
 plantconstraints/migrations/*
 
 sloppycellreports/static/*
+
+.SloppyCell/
+mutantModels/
+sloppycellreports/fittings/
+sloppycellreports/templates/sloppycellreports/notebook/
+

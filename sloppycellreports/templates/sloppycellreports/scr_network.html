@@ -45,32 +45,16 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>   
-       
-    <div class="col-lg-3">
-        <h1>Initial state</h1>
-    </div>
-       
-	<div class="col-lg-6">
-        <h1>Constraints</h1>
-    {% for constraint in constraints %}
-     <div class="col-lg-6">
+
+    {% for network_plot in network_plots %}
+     <div class="col-lg-3">
 	     <div class="thumbnail">
-    <img src="/static/sloppycellreports/{{ fitting_folder }}_sloppyCell/images/{{ constraint }}" alt="..." id="#display"/>
+    <img src="/static/sloppycellreports/{{ fitting_folder }}_sloppyCell/images/{{ network }}/{{ network_plot }}" alt="..." id="#display"/>
 	    </div>
      </div>
     {% endfor %}
-    </div>
+
     
-    
-    <div class="col-lg-3">
-        <h1>Cost</h1>
-        <div class="thumbnail">
-	 <img src="/static/sloppycellreports/{{ fitting_folder }}_sloppyCell/images/{{ cost }}" alt="..." id="#display"/>
-         </div>
-    </div>
-    <div class="col-lg-3">
-        <a class="btn btn-link" href="/sloppycellreports/notebook/{{ fitting_folder }}" role="button "><h3>Ipython Notebook</h3></a>
-    </div>
    </div>
 </div>
 
